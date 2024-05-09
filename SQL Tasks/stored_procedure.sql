@@ -19,7 +19,7 @@ DELIMITER ;
 CALL p(15, 20000);
 
 
-DROP PROCEDURE IF EXISTS GetTransactionsByBranchAndAmount;
+DROP PROCEDURE IF EXISTS p;
 
 
 
