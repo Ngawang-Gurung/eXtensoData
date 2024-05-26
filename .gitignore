@@ -1,0 +1,3 @@
+Airflow_Docker/project/.env
+Airflow_Docker/project/logs
+Airflow_Docker/project/config/airflow.cfg
