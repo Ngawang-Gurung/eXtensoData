@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2e4c409f-92d7-4fdf-9446-a9afcfa74529" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/dags/first_dag.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/dags/xrate.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/project/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=bash/run_id=manual__2024-05-05T032540.276576+0000/task_id=run_after_loop/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=bash/run_id=manual__2024-05-05T032624.783294+0000/task_id=run_after_loop/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=bash/run_id=manual__2024-05-05T033341.572808+0000/task_id=bash_command/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=bash/run_id=manual__2024-05-05T033341.572808+0000/task_id=bash_command/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=bash/run_id=manual__2024-05-05T033341.572808+0000/task_id=run_after_loop/attempt=1.log.SchedulerJob.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=bash/run_id=manual__2024-05-05T033748.199611+0000/task_id=bash_command/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=bash/run_id=manual__2024-05-05T033809.661705+0000/task_id=bash_command/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=bash/run_id=manual__2024-05-05T033948.226025+0000/task_id=bash_command/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=bash/run_id=manual__2024-05-05T033948.226025+0000/task_id=bash_command/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=bash/run_id=manual__2024-05-05T034350.810140+0000/task_id=create_dir/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=bash/run_id=manual__2024-05-05T034622.085557+0000/task_id=bash_curl/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=bash/run_id=manual__2024-05-05T034622.085557+0000/task_id=bash_curl/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=bash/run_id=manual__2024-05-05T034806.797410+0000/task_id=bash_curl/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=bash/run_id=manual__2024-05-05T035711.277730+0000/task_id=bash_curl/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=bash/run_id=manual__2024-05-05T035711.277730+0000/task_id=bash_curl/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=bash/run_id=manual__2024-05-05T041928.391060+0000/task_id=bash_curl/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=bash/run_id=scheduled__2024-03-14T000000+0000/task_id=bash_command/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=bash/run_id=scheduled__2024-03-14T000000+0000/task_id=bash_command/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=bash/run_id=scheduled__2024-03-14T000000+0000/task_id=bash_curl/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=bash/run_id=scheduled__2024-03-14T000000+0000/task_id=run_after_loop/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=emaildag/run_id=scheduled__2024-05-03T013000+0000/task_id=executetask/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=emaildag/run_id=scheduled__2024-05-03T013000+0000/task_id=send_email/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=emaildag/run_id=scheduled__2024-05-03T013000+0000/task_id=send_email/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=emaildag/run_id=scheduled__2024-05-04T013000+0000/task_id=executetask/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=emaildag/run_id=scheduled__2024-05-04T013000+0000/task_id=send_email/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=emaildag/run_id=scheduled__2024-05-07T011500+0000/task_id=executetask/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=emaildag/run_id=scheduled__2024-05-07T011500+0000/task_id=send_email/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=emaildag/run_id=scheduled__2024-05-08T011500+0000/task_id=executetask/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=emaildag/run_id=scheduled__2024-05-08T011500+0000/task_id=send_email/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=first_dag/run_id=scheduled__2024-03-14T000000+0000/task_id=hello_world_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-05T021242.369441+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-05T021242.369441+0000/task_id=mysql_table_dump_task/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-05T022046.046200+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-05T022046.046200+0000/task_id=mysql_table_dump_task/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-05T032008.893033+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-05T032008.893033+0000/task_id=mysql_table_dump_task/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-05T035944.803416+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-05T035944.803416+0000/task_id=mysql_table_dump_task/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-05T041020.622706+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-05T041020.622706+0000/task_id=mysql_table_dump_task/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-05T044215.677691+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-05T044215.677691+0000/task_id=mysql_table_dump_task/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-05T051933.220872+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-05T051933.220872+0000/task_id=mysql_table_dump_task/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-05T052240.206236+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-05T052240.206236+0000/task_id=mysql_table_dump_task/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-05T054010.778753+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-05T054010.778753+0000/task_id=mysql_table_dump_task/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-05T070529.536863+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-05T070529.536863+0000/task_id=mysql_table_dump_task/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-05T070705.789512+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-05T070705.789512+0000/task_id=mysql_table_dump_task/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T085606.772719+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T085606.772719+0000/task_id=mysql_table_dump_task/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T093443.218438+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T093443.218438+0000/task_id=mysql_table_dump_task/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T093855.317116+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T093855.317116+0000/task_id=mysql_table_dump_task/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T093934.708158+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T093934.708158+0000/task_id=mysql_table_dump_task/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T094124.430372+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T094357.504317+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T094413.627516+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T094833.633473+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T094851.895877+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T094915.422983+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T094926.484191+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T100957.062473+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T101547.283444+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T101839.316226+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T103709.543426+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T103947.393185+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T105146.365165+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T105736.277401+0000/task_id=mysql_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T105905.630793+0000/task_id=mysql_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T112137.719849+0000/task_id=mysql_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T112337.300991+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-07T162325.945037+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-08T022636.303535+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-08T022636.303535+0000/task_id=mysql_table_load_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-08T041936.588304+0000/task_id=mysql_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-09T040417.116952+0000/task_id=mysql_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-09T040509.380867+0000/task_id=mysql_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=manual__2024-05-09T040730.676421+0000/task_id=mysql_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=scheduled__2024-03-14T000000+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=scheduled__2024-03-14T000000+0000/task_id=mysql_table_dump_task/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=scheduled__2024-03-14T000000+0000/task_id=mysql_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=scheduled__2024-05-04T000000+0000/task_id=mysql_table_dump_task/attempt=1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_id=mysql_table_dump/run_id=scheduled__2024-05-04T000000+0000/task_id=mysql_table_dump_task/attempt=2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/dag_processor_manager/dag_processor_manager.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/bash_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/dump_load_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/email_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/first_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_bash_decorator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_bash_operator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_branch_datetime_operator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_branch_labels.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_branch_operator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_branch_operator_decorator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_branch_python_dop_operator_3.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_complex.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_dag_decorator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_datasets.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_display_name.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_dynamic_task_mapping.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_external_task_marker_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_kubernetes_executor.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_latest_only.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_latest_only_with_trigger.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_local_kubernetes_executor.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_nested_branch_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_params_trigger_ui.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_params_ui_tutorial.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_passing_params_via_test_command.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_python_decorator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_python_operator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_sensor_decorator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_sensors.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_setup_teardown.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_setup_teardown_taskflow.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_short_circuit_decorator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_short_circuit_operator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_skip_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_sla_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_subdag_operator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_task_group.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_task_group_decorator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_time_delta_sensor_async.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_trigger_controller_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_trigger_target_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_xcom.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/example_xcomargs.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/plugins/decreasing_priority_weight_strategy.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/plugins/event_listener.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/plugins/listener_plugin.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/plugins/workday.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/subdags/subdag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/tutorial.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/tutorial_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/tutorial_objectstorage.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/tutorial_taskflow_api.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-05/native_dags/example_dags/tutorial_taskflow_api_virtualenv.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-07/bash_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-07/dump_load_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-07/email_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-07/first_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-08/bash_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-08/dump_load_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-08/email_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-08/first_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-09/bash_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-09/dump_load_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-09/email_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/logs/scheduler/2024-05-09/first_dag.py.log" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Ngawang-Gurung"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Ngawang-Gurung/eXtensoData.git",
+    "accountId": "7a7bb5bd-5ee6-4b77-9569-8f392785a744"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2gzYOx8ytMhqNKevEMvqWj86kk8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-PY-241.15989.155" />
+        <option value="bundled-python-sdk-babbdf50b680-7c6932dee5e4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.15989.155" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2e4c409f-92d7-4fdf-9446-a9afcfa74529" name="Changes" comment="" />
+      <created>1716701847372</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716701847372</updated>
+      <workItem from="1716701848933" duration="973000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
