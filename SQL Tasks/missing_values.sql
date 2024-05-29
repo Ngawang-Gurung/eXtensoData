@@ -1,16 +1,18 @@
-show databases;
+SHOW DATABASES;
 
-use fc_facts;
+USE fc_facts;
 
-show tables;
+SHOW TABLES;
 
-create table facts_dummy as
-select * from facts;
+CREATE TABLE facts_dummy AS
+SELECT *
+FROM facts;
 
-select * from facts_dummy; 
+SELECT *
+FROM facts_dummy;
 
-UPDATE facts_dummy 
-SET average_deposit = 0 
+UPDATE facts_dummy
+SET average_deposit = 0
 WHERE average_deposit IS NULL;
 
 

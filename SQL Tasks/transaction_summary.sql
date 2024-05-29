@@ -1,12 +1,12 @@
 SHOW DATABASES;
 
-CREATE DATABASE TRANSACTION;
+CREATE DATABASE transaction;
 
-USE TRANSACTION;
+USE transaction;
 
-SHOW tables;
+SHOW TABLES;
 
--- LOADING Table in MySQL from CSV file
+-- LOADING Table in MySQL from CSV file using LOAD DATA INFILE
 
 CREATE TABLE transaction_summary (
     Account_No varchar(255),
@@ -35,10 +35,14 @@ SET
 
 SELECT * FROM transaction_summary;
 
--- Creating balance_amt column
+-- Creating balance_amt column using cumulative sum
 
 ALTER TABLE transaction_summary 
 ADD COLUMN ID int(255) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY; 
+
+SELECT Deposit_Amt, Withdrawal_Amt, Balance_Amt,
+SUM(Deposit_Amt-Withdrawal_Amt) OVER (ORDER BY ID) AS Balance
+FROM transaction_summary ts ;
 
 SELECT
     Deposit_Amt,
@@ -50,9 +54,7 @@ SELECT
 FROM
     transaction_summary ts1;
 
-SELECT Deposit_Amt, Withdrawal_Amt, Balance_Amt,
-SUM(Deposit_Amt-Withdrawal_Amt) OVER (ORDER BY ID) AS Balance 
-FROM transaction_summary ts ;
+
 
    
 

@@ -98,8 +98,6 @@ SELECT payer_account_id, SUM(reward_point) as reward_points
 FROM joined
 GROUP BY payer_account_id;
 
-DROP TABLE reward_points;
-
 -- Revenue Amount
 CREATE TABLE revenue_amount AS
 SELECT payer_account_id, SUM(revenue_amt) AS total_revenue, AVG(revenue_amt) AS monthly_revenue

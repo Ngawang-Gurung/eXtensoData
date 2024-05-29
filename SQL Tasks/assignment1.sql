@@ -3,68 +3,65 @@ CREATE database client_rw;
 USE client_rw;
 
 -- TASK 1
-show tables;
+SHOW TABLES;
 
-describe fc_account_master;
-describe fc_transaction_base;
+DESCRIBE fc_account_master;
+DESCRIBE fc_transaction_base;
 
-select * from fc_account_master limit 2;
-select * from fc_transaction_base;
+SELECT *
+FROM fc_account_master
+LIMIT 2;
 
-ALTER TABLE fc_transaction_base RENAME COLUMN ï»¿tran_date to tran_date;
+SELECT *
+FROM fc_transaction_base;
+
+ALTER TABLE fc_transaction_base RENAME COLUMN ï»¿tran_date TO tran_date;
 
 -- TASK 2 
 
-select 
-account_number, 
-month(tran_date) as monthly,
-avg(case when dc_indicator = 'deposit' then lcy_amount else null end) as average_deposit,
-avg(case when dc_indicator = 'withdraw' then lcy_amount else null end) as average_withdraw,
-std(case when dc_indicator = 'deposit' then lcy_amount else null end) as std_deposit,
-std(case when dc_indicator = 'withdraw' then lcy_amount else null end) as std_withdraw,
-variance(case when dc_indicator = 'deposit' then lcy_amount else null end) as var_deposit,
-variance(case when dc_indicator = 'withdraw' then lcy_amount else null end) as var_withdraw
-from fc_transaction_base 
-group by account_number, monthly;
+SELECT account_number,
+       MONTH(tran_date)                                                            AS monthly,
+       AVG(CASE WHEN dc_indicator = 'deposit' THEN lcy_amount ELSE NULL END)       AS average_deposit,
+       AVG(CASE WHEN dc_indicator = 'withdraw' THEN lcy_amount ELSE NULL END)      AS average_withdraw,
+       STD(CASE WHEN dc_indicator = 'deposit' THEN lcy_amount ELSE NULL END)       AS std_deposit,
+       STD(CASE WHEN dc_indicator = 'withdraw' THEN lcy_amount ELSE NULL END)      AS std_withdraw,
+       VARIANCE(CASE WHEN dc_indicator = 'deposit' THEN lcy_amount ELSE NULL END)  AS var_deposit,
+       VARIANCE(CASE WHEN dc_indicator = 'withdraw' THEN lcy_amount ELSE NULL END) AS var_withdraw
+FROM fc_transaction_base
+GROUP BY account_number, monthly;
 
-select * from fc_account_master as am 
-join fc_transaction_base as tb 
-on am.account_number = tb.account_number;
+SELECT *
+FROM fc_account_master AS am
+         JOIN fc_transaction_base AS tb
+              ON am.account_number = tb.account_number;
 
--- TASK 3
+-- TASK 2/3
 
-select 
-am.account_number, am.customer_code,
-month(tran_date) as monthly,
-avg(case when dc_indicator = 'deposit' then lcy_amount else null end) as average_deposit,
-avg(case when dc_indicator = 'withdraw' then lcy_amount else null end) as average_withdraw,
-std(case when dc_indicator = 'deposit' then lcy_amount else null end) as std_deposit,
-std(case when dc_indicator = 'withdraw' then lcy_amount else null end) as std_withdraw,
-variance(case when dc_indicator = 'deposit' then lcy_amount else null end) as var_deposit,
-variance(case when dc_indicator = 'withdraw' then lcy_amount else null end) as var_withdraw
-from fc_account_master as am 
-join fc_transaction_base as tb 
-on am.account_number = tb.account_number
-group by am.account_number, monthly, am.customer_code;
+CREATE TABLE facts AS
+SELECT am.account_number,
+       am.customer_code,
+       MONTH(tran_date)                                                            AS monthly,
+       AVG(CASE WHEN dc_indicator = 'deposit' THEN lcy_amount ELSE NULL END)       AS average_deposit,
+       AVG(CASE WHEN dc_indicator = 'withdraw' THEN lcy_amount ELSE NULL END)      AS average_withdraw,
+       STD(CASE WHEN dc_indicator = 'deposit' THEN lcy_amount ELSE NULL END)       AS std_deposit,
+       STD(CASE WHEN dc_indicator = 'withdraw' THEN lcy_amount ELSE NULL END)      AS std_withdraw,
+       VARIANCE(CASE WHEN dc_indicator = 'deposit' THEN lcy_amount ELSE NULL END)  AS var_deposit,
+       VARIANCE(CASE WHEN dc_indicator = 'withdraw' THEN lcy_amount ELSE NULL END) AS var_withdraw
+FROM fc_account_master AS am
+         JOIN fc_transaction_base AS tb
+              ON am.account_number = tb.account_number
+GROUP BY am.account_number, monthly, am.customer_code;
 
-create table facts as 
-	select 
-	am.account_number, am.customer_code,
-	month(tran_date) as monthly,
-	avg(case when dc_indicator = 'deposit' then lcy_amount else null end) as average_deposit,
-	avg(case when dc_indicator = 'withdraw' then lcy_amount else null end) as average_withdraw,
-	std(case when dc_indicator = 'deposit' then lcy_amount else null end) as std_deposit,
-	std(case when dc_indicator = 'withdraw' then lcy_amount else null end) as std_withdraw,
-	variance(case when dc_indicator = 'deposit' then lcy_amount else null end) as var_deposit,
-	variance(case when dc_indicator = 'withdraw' then lcy_amount else null end) as var_withdraw
-	from fc_account_master as am 
-	join fc_transaction_base as tb 
-	on am.account_number = tb.account_number
-	group by am.account_number, monthly, am.customer_code; 
-    
-create database fc_facts;
-use fc_facts;
-show tables;
-select * from facts limit 10;
+
+-- Dump facts table into fc_facts database
+CREATE DATABASE fc_facts;
+
+USE fc_facts;
+
+SHOW TABLES;
+
+SELECT *
+FROM facts
+LIMIT 10;
 
 

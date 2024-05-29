@@ -1,4 +1,4 @@
--- Learning Window Functions
+-- Learning Window Function
 
 SHOW DATABASES;
 CREATE DATABASE industry;
