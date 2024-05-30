@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e4c409f-92d7-4fdf-9446-a9afcfa74529" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/dags/entity_match_dag.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/dags/entity_match_dag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/project/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/files/final_result.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +76,9 @@
       <workItem from="1716724249941" duration="84000" />
       <workItem from="1716725440577" duration="145000" />
       <workItem from="1716797907016" duration="635000" />
+      <workItem from="1717039863763" duration="1694000" />
+      <workItem from="1717042864989" duration="313000" />
+      <workItem from="1717043246333" duration="25000" />
     </task>
     <servers />
   </component>

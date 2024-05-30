@@ -77,7 +77,6 @@ def preprocess(ti):
 
     return [layout1, layout2, layout3, layout4, layout5]
 
-
 preprocess_task = PythonOperator(
     task_id='preprocess_task',
     python_callable=preprocess,
