@@ -3,4 +3,5 @@
 .idea/
 logs/
 dags/__pycache__/
+utils/__pycache__/
 config/airflow.cfg

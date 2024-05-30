@@ -31,7 +31,7 @@ def combine_layouts(A, B, metric='levenshtein', threshold=20):
                 idx_B = idx_row[idx_A]
                 combined_row = A.loc[idx_A].combine_first(B.loc[idx_B])
                 combined_row['source'] = f"{A.loc[idx_A]['source']}, {B.loc[idx_B]['source']}"
-                combined_row['modified_date'] = datetime.now()
+                combined_row['last_modified_date'] = datetime.now()
             else:
                 combined_row = A.loc[idx_A]
             combined_data = pd.concat([combined_data, combined_row.to_frame().T], ignore_index=True)
