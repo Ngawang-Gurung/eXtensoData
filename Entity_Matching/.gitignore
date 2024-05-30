@@ -1,0 +1,5 @@
+.venv/
+.idea/
+logs/
+dags/__pycache__/
+config/airflow.cfg
