@@ -5,6 +5,8 @@ SHOW TABLES;
 SELECT *
 FROM customer_profile;
 
+SELECT * FROM rw_transaction_data;
+
 SELECT *
 FROM product_category_map;
 
@@ -40,10 +42,13 @@ SET month = MONTH(last_modified_date);
 SELECT DISTINCT (month)
 FROM joined;
 
--- TXN Flow
+-- TXN flow
 
 SELECT DISTINCT (joined.txn_flow)
 FROM joined;
+
+
+
 
 CREATE TABLE txn_flow AS
 SELECT payer_account_id,
