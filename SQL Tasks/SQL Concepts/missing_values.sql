@@ -1,3 +1,6 @@
+
+-- Replace NULL values with 0--
+
 SHOW DATABASES;
 
 USE fc_facts;
