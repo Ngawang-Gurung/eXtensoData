@@ -18,11 +18,11 @@ FROM new_customer_profile;
 
 DELIMITER //
 DROP PROCEDURE IF EXISTS describe_column //
-CREATE PROCEDURE describe_column(IN columnName varchar(255))
+CREATE PROCEDURE describe_column(IN tableName varchar(255), IN columnName varchar(255))
 BEGIN
     SET @sql_query = CONCAT('SELECT AVG(', columnName, ') avg, MIN(', columnName, ') min, MAX(', columnName, ') max, SUM(', columnName, ') sum, COUNT(', columnName, ') count,
-                        ( SELECT COUNT(*) FROM new_customer_profile WHERE ', columnName, ' IS NULL) null_count
-                        FROM new_customer_profile');
+                        ( SELECT COUNT(*) FROM ', tableName, ' WHERE ', columnName, ' IS NULL) null_count
+                        FROM ', tableName, '');
     PREPARE statement FROM @sql_query;
     EXECUTE statement;
     DEALLOCATE PREPARE statement;
@@ -30,8 +30,7 @@ END //
 
 DELIMITER ;
 
-SELECT * FROM new_customer_profile;
-CALL describe_column('total_inflow_amount');
+CALL describe_column('new_customer_profile','total_inflow_amount');
 
 -- Find all column names of a table in database
 
