@@ -1,12 +1,11 @@
 import pandas as pd
 import numpy as np
 
-class DataFrameIntegrity:
+class DataIntegrity:
     
     def __init__(self, df):
         self.df = df.copy()
         self.replace_disguised_missing()
-        
     def null_check(self, column = None):
         if column:
             null_count = self.df[column].isna().sum()
@@ -35,7 +34,7 @@ class DataFrameIntegrity:
             if column:
                 print(f"\n{duplicate_count} duplicate values found in column '{column}'\n")
             else:
-                print(f"\n{duplicate_count} duplicate values found in the dataframe\n") 
+                print(f"\n{duplicate_count} duplicate records found in the dataframe\n") 
 
         return duplicate_records
     
@@ -87,7 +86,7 @@ expected_types = {
     'DOB': 'datetime'
 }
 
-integrity_checker = DataFrameIntegrity(df)
+integrity_checker = DataIntegrity(df)
 
 # print(integrity_checker.null_check())
 print(integrity_checker.null_check(column='account_number'))
