@@ -71,48 +71,48 @@ WHERE salesman_id IN (SELECT salesman_id
 
 #10
 SELECT o.*, c.cust_name
-FROM orders o JOIN customer c
-ON o.customer_id = c.customer_id
+FROM orders o
+         JOIN customer c
+              ON o.customer_id = c.customer_id
 WHERE o.ord_date = '2012-08-17';
 
 #11*
 SELECT salesman.salesman_id, salesman.name
 FROM salesman
-WHERE 1 < (
-    SELECT count(*) FROM customer WHERE customer.salesman_id = salesman.salesman_id
-    );
+WHERE 1 < (SELECT COUNT(*) FROM customer WHERE customer.salesman_id = salesman.salesman_id);
 
 #12*
 
 SELECT *
 FROM orders a
 WHERE purch_amt >
-    (SELECT AVG(purch_amt) FROM orders b
-     WHERE b.customer_id = a.customer_id);
+      (SELECT AVG(purch_amt)
+       FROM orders b
+       WHERE b.customer_id = a.customer_id);
 
 #13 - Similar to 12
 
 #14
-SELECT sum(a.purch_amt) sums, a.ord_date
+SELECT SUM(a.purch_amt) sums, a.ord_date
 FROM orders a
 GROUP BY a.ord_date
-HAVING sums >  (
-    SELECT 1000 + max(purch_amt) FROM orders b WHERE a.ord_date = b.ord_date
-    );
+HAVING sums > (SELECT 1000 + MAX(purch_amt) FROM orders b WHERE a.ord_date = b.ord_date);
 
 #15
 SELECT *
 FROM customer
-WHERE 0 < (
-    SELECT count(*) FROM customer WHERE city = "London"
-    );
+WHERE 0 < (SELECT COUNT(*)
+           FROM customer
+           WHERE city = "London");
 
 SELECT *
 FROM customer
-WHERE exists(
-    SELECT * FROM customer WHERE city = "London"
-);
+WHERE EXISTS(SELECT *
+             FROM customer
+             WHERE city = "London");
 
+#16*
+#17*
 
 
 

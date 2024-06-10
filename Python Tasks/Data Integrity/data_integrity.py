@@ -6,6 +6,7 @@ class DataIntegrity:
     def __init__(self, df):
         self.df = df.copy()
         self.replace_disguised_missing()
+
     def null_check(self, column = None):
         if column:
             null_count = self.df[column].isna().sum()
