@@ -7,7 +7,7 @@ SELECT * FROM df;
 SELECT DISTINCT(month_id)
 FROM df;
 
-with pivot_table as (
+WITH pivot_table as (
 SELECT account,
        MAX(CASE WHEN month_id = 31552 THEN 1 ELSE 0 END) AS month_31552,
        MAX(CASE WHEN month_id = 31553 THEN 1 ELSE 0 END) AS month_31553,
