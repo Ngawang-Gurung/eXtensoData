@@ -20,7 +20,7 @@ def table_df(database_name, table_name):
     df = pd.read_sql(sql=query, con=con)
     return df
 
-def df_table(database_name, dataframe, table_name):
+def df_table(dataframe, database_name, table_name):
     
     conn_url = URL.create(
         "mysql+mysqlconnector",

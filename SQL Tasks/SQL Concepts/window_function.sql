@@ -31,15 +31,15 @@ SELECT department, avg(salary) FROM employee GROUP BY department;
 
 SELECT
     employee.*, avg(employee.salary)
-                    OVER (PARTITION BY employee.department ORDER BY age)
+                    OVER (PARTITION BY employee.department ORDER BY employee.age )
         AS avg_salary
 FROM employee;
 
 SELECT
-    ROW_NUMBER() OVER (PARTITION BY Department ORDER BY Salary DESC) AS emp_row_no,
     Name,
     Department,
     Salary,
+    ROW_NUMBER() OVER (PARTITION BY Department ORDER BY Salary DESC) AS emp_row_no,
     RANK() OVER(PARTITION BY Department ORDER BY Salary DESC) AS emp_rank,
     DENSE_RANK() OVER(PARTITION BY Department ORDER BY Salary DESC) AS emp_dense_rank
 FROM

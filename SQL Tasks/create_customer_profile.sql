@@ -47,9 +47,6 @@ FROM joined;
 SELECT DISTINCT (joined.txn_flow)
 FROM joined;
 
-
-
-
 CREATE TABLE txn_flow AS
 SELECT payer_account_id,
        SUM(inflow)           AS total_inflow_amount,
