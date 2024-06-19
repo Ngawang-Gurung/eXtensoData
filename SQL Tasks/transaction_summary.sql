@@ -1,8 +1,6 @@
 SHOW DATABASES;
 
-CREATE DATABASE transaction;
-
-USE transaction;
+USE client_rw;
 
 SHOW TABLES;
 

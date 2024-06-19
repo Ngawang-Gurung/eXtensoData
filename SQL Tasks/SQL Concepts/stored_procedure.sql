@@ -1,8 +1,10 @@
 USE client_rw;
 SHOW tables;
 
-DELIMITER //
+-- Simple Stored Procedure --
 
+DELIMITER //
+DROP PROCEDURE IF EXISTS p //
 CREATE PROCEDURE p(
     IN branch_ INT,
     IN lcy_amount_ DOUBLE
@@ -13,14 +15,15 @@ BEGIN
     WHERE branch = branch_
     AND lcy_amount = lcy_amount_;
 END //
-
 DELIMITER ;
 
 CALL p(15, 20000);
 
-DROP PROCEDURE IF EXISTS p;
 
 -- Fill Date using Loop --
+
+USE mydb;
+
 DROP TABLE IF EXISTS calendars;
 CREATE TABLE calendars (
     date DATE PRIMARY KEY,
@@ -137,8 +140,6 @@ DELIMITER ;
 CALL RepeatDemo();
 
 -- Cursor --
-
-USE client_rw;
 
 DELIMITER //
 DROP PROCEDURE IF EXISTS create_five_list;

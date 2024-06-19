@@ -1,5 +1,3 @@
-CREATE DATABASE validation;
-
 USE validation;
 
 SHOW TABLES;

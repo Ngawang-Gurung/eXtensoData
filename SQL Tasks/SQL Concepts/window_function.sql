@@ -1,8 +1,8 @@
 -- Learning Window Function
 
 SHOW DATABASES;
-CREATE DATABASE industry;
-USE industry;
+CREATE DATABASE mydb;
+USE mydb;
 
 CREATE TABLE employee (
     name varchar(255),
@@ -43,4 +43,4 @@ SELECT
     RANK() OVER(PARTITION BY Department ORDER BY Salary DESC) AS emp_rank,
     DENSE_RANK() OVER(PARTITION BY Department ORDER BY Salary DESC) AS emp_dense_rank
 FROM
-    employee
+    employee;
