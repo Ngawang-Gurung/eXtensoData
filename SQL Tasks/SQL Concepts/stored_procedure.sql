@@ -1,26 +1,4 @@
-USE client_rw;
-SHOW tables;
-
--- Simple Stored Procedure --
-
-DELIMITER //
-DROP PROCEDURE IF EXISTS p //
-CREATE PROCEDURE p(
-    IN branch_ INT,
-    IN lcy_amount_ DOUBLE
-)
-BEGIN
-    SELECT *
-    FROM fc_transaction_base
-    WHERE branch = branch_
-    AND lcy_amount = lcy_amount_;
-END //
-DELIMITER ;
-
-CALL p(15, 20000);
-
-
--- Fill Date using Loop --
+-- Loop --
 
 USE mydb;
 

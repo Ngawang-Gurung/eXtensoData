@@ -23,15 +23,16 @@ CREATE TABLE item_changes
     FOREIGN KEY (item_id) REFERENCES items (id)
 );
 
-DELIMITER //
+-- After Update Trigger --
 
+DELIMITER //
 CREATE TRIGGER update_items_trigger
     AFTER UPDATE
     ON items
     FOR EACH ROW
 BEGIN
-INSERT INTO item_changes(item_id, change_type)
-VALUES (NEW.id, 'UPDATE');
+    INSERT INTO item_changes(item_id, change_type)
+    VALUES (NEW.id, 'UPDATE');
 END //
 DELIMITER ;
 
@@ -39,7 +40,10 @@ UPDATE items
 SET price = 70.00
 WHERE id = 1;
 
-SELECT * FROM item_changes;
+SELECT *
+FROM item_changes;
+
+-- After Insert Trigger --
 
 DELIMITER //
 CREATE TRIGGER insert_items_trigger
@@ -47,56 +51,59 @@ CREATE TRIGGER insert_items_trigger
     ON items
     FOR EACH ROW
 BEGIN
-INSERT INTO item_changes(item_id, change_type)
-VALUES (NEW.id, 'Insert');
+    INSERT INTO item_changes(item_id, change_type)
+    VALUES (NEW.id, 'Insert');
 END //
 DELIMITER ;
 
-INSERT INTO items(id, name, price) VALUES (100, 'MyItem', 5000);
+INSERT INTO items(id, name, price)
+VALUES (100, 'MyItem', 5000);
 
-SHOW TRIGGERS ;
+SHOW TRIGGERS;
 
 -- Event in MySQL, Also known as Temporal Trigger--
 
-SHOW PROCESSLIST ; # See if there is event_scheduler if not SET GLOBAL event_scheduler = ON;
+SHOW PROCESSLIST; # See if there is event_scheduler if not SET GLOBAL event_scheduler = ON;
 
 DROP TABLE IF EXISTS messages;
-CREATE TABLE IF NOT EXISTS messages (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    message VARCHAR(255) NOT NULL ,
+CREATE TABLE IF NOT EXISTS messages
+(
+    id         INT AUTO_INCREMENT PRIMARY KEY,
+    message    VARCHAR(255) NOT NULL,
     created_at DATETIME DEFAULT NOW()
 );
 
 DROP EVENT IF EXISTS one_time_log;
 CREATE EVENT IF NOT EXISTS one_tme_log
-ON SCHEDULE AT CURRENT_TIMESTAMP
-DO
-INSERT INTO messages(message) VALUES ('one-time-event');
+    ON SCHEDULE AT CURRENT_TIMESTAMP
+    DO
+    INSERT INTO messages(message)
+    VALUES ('one-time-event');
 
-SELECT * FROM messages;
+SELECT *
+FROM messages;
 
 SHOW EVENTS FROM mydb;
 
 -- Preserved Event --
 CREATE EVENT one_time_log
-ON SCHEDULE AT CURRENT_TIMESTAMP + INTERVAL 10 SECOND
-ON COMPLETION PRESERVE
-DO
-   INSERT INTO messages(message)
-   VALUES('Preserved One-time event');
+    ON SCHEDULE AT CURRENT_TIMESTAMP + INTERVAL 10 SECOND
+    ON COMPLETION PRESERVE
+    DO
+    INSERT INTO messages(message)
+    VALUES ('Preserved One-time event');
 
 SHOW EVENTS FROM mydb;
 
 -- Recurring Event --
 
 CREATE EVENT reccuring_log
-ON SCHEDULE EVERY 10 SECOND
-STARTS current_timestamp
-ENDS current_timestamp + INTERVAL 1 MINUTE
-DO
-INSERT INTO messages(message)
-VALUES (CONCAT('Running at ', NOW()));
+    ON SCHEDULE EVERY 10 SECOND
+        STARTS CURRENT_TIMESTAMP
+        ENDS CURRENT_TIMESTAMP + INTERVAL 1 MINUTE
+    DO
+    INSERT INTO messages(message)
+    VALUES (CONCAT('Running at ', NOW()));
 
-SELECT * FROM messages;
-
-
+SELECT *
+FROM messages;

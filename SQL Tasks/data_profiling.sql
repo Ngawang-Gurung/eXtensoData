@@ -24,7 +24,7 @@ END //
 
 DELIMITER ;
 
-CALL describe_column('new_customer_profile', 'total_inflow_amount');
+CALL describe_column('rw_transaction_data', 'amount');
 
 -- Find all column names of a table in database
 
@@ -90,7 +90,4 @@ DELIMITER ;
 SHOW TABLES ;
 
 CALL describe_table('rw_transaction_data');
-
-
-
 
