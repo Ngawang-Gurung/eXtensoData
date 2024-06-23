@@ -1,5 +1,3 @@
-# Note: This DAG is not working!
-
 from airflow.models import DAG
 from airflow.operators.bash_operator import BashOperator
 from airflow.operators.python_operator import PythonOperator
@@ -8,10 +6,13 @@ from hdfs import InsecureClient
 
 def upload_to_hdfs():
     # Establish a connection to HDFS
-    hdfs_client = InsecureClient('http://localhost:9870', user='Ngawang')
+    # hdfs_client = InsecureClient('http://localhost:9870', user='Ngawang')
+
+    # Establish a connection to HDFS from docker
+    hdfs_client = InsecureClient('http://host.docker.internal:9870', user='Ngawang')
 
     # Define local and HDFS file paths
-    local_file_path = "/opt/airflow/dags/myfile.csv"
+    local_file_path = "/opt/airflow/dags/bash_dag.py"
     hdfs_upload_path = '/mydir'
 
     # Upload file from local to HDFS
@@ -42,10 +43,9 @@ upload_task = PythonOperator(
     dag=hdfs_dag
 )
 
-# Set task dependencies
 upload_task
 
-# hdfs_command = "hdfs dfs put /opt/airflow/dags/myfile.csv /mydir"
+# hdfs_command = "hdfs dfs put /opt/airflow/dags/bash_dag.py /mydir"
 #
 # bash_upload = BashOperator(
 #     task_id = 'bash_upload',

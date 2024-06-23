@@ -20,7 +20,7 @@ dag = DAG(
     catchup=False,
 )
 
-dump_command = ("mysqldump -u root -pmysql@123 -h host.docker.internal -P 3306 fc_facts facts > "
+dump_command = ("mysqldump -u root -pmysql@123 -h host.docker.internal -P 3306 customer customer_profile > "
                 "/opt/airflow/dags/dump_file.sql 2>/opt/airflow/dags/dump_error.log")
 
 dump_task = BashOperator(
@@ -29,7 +29,7 @@ dump_task = BashOperator(
     dag=dag
 )
 
-load_command = "mysql -u root -pmysql@123 -h host.docker.internal -P 3306 temp < /opt/airflow/dags/dump_file.sql"
+load_command = "mysql -u root -pmysql@123 -h host.docker.internal -P 3306 mydb < /opt/airflow/dags/dump_file.sql"
 
 load_task = BashOperator(
     task_id='mysql_table_load_task',
