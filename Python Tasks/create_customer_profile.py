@@ -1,5 +1,5 @@
 import pandas as pd
-
+from functools import reduce
 from mysql_connector.mysql_connection import table_df
 
 # Data Loading and Preprocessing
@@ -92,11 +92,8 @@ nth_result = pd.merge(nth_result, third_most_used_product, on='payer_account_id'
 nth_result = nth_result[['payer_account_id', 'product_name_most', 'product_name_second', 'product_name']]
 nth_result.columns = ['payer_account_id', 'most_used_product', 'second_most_used_product', 'third_most_used_product']
 
-from functools import reduce
-
-dfs = [aggregrated_df_monthly, aggregrated_df_monthly_count, latest_df, reward_agg, revenue, this_month_revenue, product_usage, nth_result]
-
 # Merge all DataFrames in the list
+dfs = [aggregrated_df_monthly, aggregrated_df_monthly_count, latest_df, reward_agg, revenue, this_month_revenue, product_usage, nth_result]
 final_result = reduce(lambda left, right: pd.merge(left, right, on='payer_account_id'), dfs)
 
 print(final_result)

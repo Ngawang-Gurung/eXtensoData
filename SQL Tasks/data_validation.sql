@@ -1,5 +1,4 @@
-USE validation;
-
+USE quality;
 SHOW TABLES;
 
 SELECT *

@@ -1,5 +1,4 @@
-CREATE DATABASE sequence;
-USE sequence;
+USE customer;
 SHOW TABLES;
 
 -- Static Pivot Table --

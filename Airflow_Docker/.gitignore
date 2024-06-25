@@ -2,3 +2,4 @@ project/.env
 project/logs/
 project/dags/__pycache__/
 project/config/airflow.cfg
+.idea/

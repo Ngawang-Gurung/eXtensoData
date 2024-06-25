@@ -1,8 +1,8 @@
 -- Creating Tables --
 
 SHOW DATABASES ;
-CREATE DATABASE exercise;
-USE exercise;
+USE mydb;
+SHOW TABLES ;
 
 -- Creating the salesman table
 CREATE TABLE salesman (
