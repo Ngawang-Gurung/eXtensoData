@@ -1,6 +1,6 @@
 from pyspark.sql.functions import *
 from pyspark.sql.window import Window
-from mysql_spark_connection import table_df
+from utils.mysql_spark_connection import table_df
 
 rw_transaction_data = table_df('customer', 'rw_transaction_data')
 product_category_map = table_df('customer', 'product_category_map')

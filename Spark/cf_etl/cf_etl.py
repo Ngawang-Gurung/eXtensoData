@@ -2,16 +2,23 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import *
 import pymysql
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+DB_USERNAME = os.getenv('DB_USERNAME')
+DB_PASSWORD = os.getenv('DB_PASSWORD')
+DB_HOST = os.getenv('DB_HOST')
+DB_PORT = os.getenv('DB_PORT')
+
 spark = SparkSession.builder.appName("cf_etl").getOrCreate()
 
 def table_df(schema_name, table_name):
-    '''
-    MySQL and Spark Connections    
-    '''
-    url = f"jdbc:mysql://localhost/{schema_name}"
+    url = f"jdbc:mysql://{DB_HOST}:{DB_PORT}/{schema_name}"
     properties = {
-        "user": "root",
-        "password": "mysql@123",
+        "user": DB_USERNAME,
+        "password": DB_PASSWORD,
         "driver": "com.mysql.cj.jdbc.Driver"
     }
     df = spark.read.jdbc(url=url, table=table_name, properties=properties)
