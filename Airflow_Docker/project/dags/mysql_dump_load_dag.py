@@ -39,16 +39,4 @@ load_task = BashOperator(
 
 dump_task >> load_task
 
-# mysql_query = """
-#     CREATE TABLE free(
-#         name varchar(255)
-#     );
-# """
-#
-# mysql_task = MySqlOperator(
-#     task_id='mysql_task',
-#     mysql_conn_id='MySQLID',  # Connection ID as configured in Airflow
-#     sql=mysql_query,
-#     dag=dag,
-# )
 
