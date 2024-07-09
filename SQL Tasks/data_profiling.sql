@@ -69,9 +69,9 @@ BEGIN
             'FROM `', tableName, '`'
         );
 
-        -- Add UNION ALL only if the query is not empty
+        -- Add UNION only if the query is not empty
         IF @sql_query != '' THEN
-            SET @sql_query = CONCAT(@sql_query, ' UNION ALL ');
+            SET @sql_query = CONCAT(@sql_query, ' UNION ');
         END IF;
 
         -- Append the current query part to the main query
