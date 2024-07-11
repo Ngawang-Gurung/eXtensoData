@@ -25,13 +25,11 @@ def table_df(schema_name, table_name):
     return df
 
 def update_date_on_config_table(schema_name, table_name, index, interval_period):
-    '''
-    Update dates on config table using PyMySQL 
-    '''
+
     pymysql_connection = pymysql.connect(
-        host='localhost',
-        user='root',
-        password='mysql@123',
+        host= DB_HOST,
+        user= DB_USERNAME,
+        password=DB_PASSWORD,
         database= schema_name
     )
 
@@ -47,13 +45,12 @@ def update_date_on_config_table(schema_name, table_name, index, interval_period)
         
         pymysql_connection.commit()
 
-
 def field_mapped_df(cf_db, schema_name, table_name, table_id):
 
     con = pymysql.connect(
-        host='localhost',
-        user='root',
-        password='mysql@123',
+        host= DB_HOST,
+        user= DB_USERNAME,
+        password=DB_PASSWORD,
         database= cf_db
     )
 
