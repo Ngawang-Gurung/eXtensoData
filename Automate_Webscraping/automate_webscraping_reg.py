@@ -1,4 +1,4 @@
-# This script extracts voter data of Gandaki Province. Change values in for loop for specific combination. 
+# This script extracts voter data of only one registration center. Change values in for loop for specific combination. 
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -9,7 +9,8 @@ import pandas as pd
 from io import StringIO
 
 # Initialize WebDriver
-driver = webdriver.Firefox()
+# driver = webdriver.Firefox()
+driver = webdriver.Chrome()
 driver.get("https://voterlist.election.gov.np/bbvrs1/index_2.php")
 driver.implicitly_wait(0.2)
 
@@ -32,15 +33,15 @@ def post_submit_actions():
     scraper()
 
 # Loop through each combination 
-for state_index in range(2, 3):  #(1,8+1)
+for state_index in range(1,2):  #(1,7+1)
     try:
-        for dist_index in range(1, 9): #(1, 14+1)
+        for dist_index in range(1,2): #(1, 14+1)
             try:
-                for mun_index in range(1, 19): #(1, 18+1)
+                for mun_index in range(1,2): #(1, 18+1)
                     try:
-                        for ward_index in range(1, 26): #(1, 33+1)
+                        for ward_index in range(1,2): #(1, 33+1)
                             try:
-                                for reg_centre_index in range(1, 10): #(1, 9+1)
+                                for reg_centre_index in range(1,2): #(1, 9+1)
                                     try:
                                         state_dropdown = driver.find_element(By.XPATH, '//select[@id="state"]')
                                         dist_dropdown = driver.find_element(By.XPATH, '//select[@id="district"]')
@@ -72,5 +73,5 @@ for state_index in range(2, 3):  #(1,8+1)
     except NoSuchElementException:
         break
 
-df.to_csv('gandaki.csv',  header=True,  index=False)
+df.to_csv('reg_1.csv',  header=True,  index=False)
 driver.quit()
