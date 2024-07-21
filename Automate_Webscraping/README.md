@@ -5,7 +5,6 @@
 ### Step 1: Installation 
 
 1. **Create a Virtual Environment**:
-   - Navigate to your project directory and create a virtual environment named `scraping-venv`.
      ```bash
      python -m venv venv
      ```
@@ -23,7 +22,7 @@
      ```bash
      pip install -r requirements.txt
      ```
-3. **Ensure you have the latest version of either Chrome or Firefox installed on your machine and edit the driver line in the script depending on which browser you're using in your script.**
+3. **Ensure you have the latest version of either Chrome or Firefox installed on your machine and edit the driver line in the script depending on which browser you're using in the script.**
 
    ```python
    driver = webdriver.Firefox()
