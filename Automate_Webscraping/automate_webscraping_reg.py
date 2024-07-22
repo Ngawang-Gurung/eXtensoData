@@ -8,7 +8,9 @@ from bs4 import BeautifulSoup
 import pandas as pd
 from io import StringIO
 
-# Initialize WebDriver
+from mysql_connection import df_table
+
+# Initialize WebDriver accordingly
 # driver = webdriver.Firefox()
 driver = webdriver.Chrome()
 driver.get("https://voterlist.election.gov.np/bbvrs1/index_2.php")
@@ -74,4 +76,5 @@ for state_index in range(1,2):  #(1,7+1)
         break
 
 df.to_csv('reg_1.csv',  header=True,  index=False)
+df_table(dataframe=df, database_name='mydb', table_name='reg')
 driver.quit()
