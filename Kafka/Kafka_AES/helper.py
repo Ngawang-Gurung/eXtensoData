@@ -28,7 +28,7 @@ def table_df(database_name, table_name):
     con = engine.connect()
 
     query = f'SELECT * FROM {table_name}'
-    df = pd.read_sql(sql=query, con=con)
+    df = pd.read_sql(sql=query, con=con.connection)
     con.close()  # Close the connection after use
     return df
 
