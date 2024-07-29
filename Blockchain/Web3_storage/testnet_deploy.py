@@ -36,7 +36,7 @@ with open("compiled_code.json", "w") as file:
 
 # Connecting to ganache
 w3 = Web3(
-    Web3.HTTPProvider("https://sepolia.infura.io/v3/2a03ba2163f5429a846cf04493df0a75")
+    Web3.HTTPProvider(f"https://sepolia.infura.io/v3/{os.getenv("INFURA_API")}")
     )
 chain_id = 11155111  
 my_address = "0x0b9b6CC9e5899C65eA2fED0A027DCC94bC427F7E"

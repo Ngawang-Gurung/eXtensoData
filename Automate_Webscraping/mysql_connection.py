@@ -31,8 +31,8 @@ def table_df(database_name, table_name):
     con = engine.connect()
 
     query = f'SELECT * FROM {table_name}'
-    # df = pd.read_sql(sql=query, con=con)                  # Pandas < 2.2.0
-    df = pd.read_sql(sql=query, con=con.connection)         # Pandas >= 2.2.0
+    df = pd.read_sql(sql=query, con=con)                  # Pandas < 2.2.0
+    # df = pd.read_sql(sql=query, con=con.connection)         # Pandas >= 2.2.0
     con.close()  
     return df
 
@@ -48,11 +48,11 @@ def df_table(dataframe, database_name, table_name):
         )
 
         engine = create_engine(conn_url)
-        dataframe.to_sql(table_name, con=engine, if_exists='replace', index=False, chunksize=100000) 
+        # dataframe.to_sql(table_name, con=engine, if_exists='replace', index=False, chunksize=100000) 
 
-        # with engine.connect() as con:
-        #     # dataframe.to_sql(table_name, con=con, if_exists='replace', index=False, chunksize=100000)  # Pandas < 2.2.0
-        #     dataframe.to_sql(table_name, con=con.connection, if_exists='replace', index=False, chunksize=100000)  # Pandas < 2.2.0
+        with engine.connect() as con:
+            dataframe.to_sql(table_name, con=con, if_exists='replace', index=False, chunksize=100000)  # Pandas < 2.2.0
+        #     dataframe.to_sql(table_name, con=con.connection, if_exists='replace', index=False, chunksize=100000)  # Pandas >= 2.2.0
 
     except Exception as e:
         logger.error(f"Error occurred: {e}")
