@@ -33,7 +33,7 @@ def post_submit_actions():
     scraper()
 
 # Loop through each combination 
-for state_index in range(2, 3):  #(1,7+1) 
+for state_index in range(4, 5):  #(1,7+1) 
     try:
         for dist_index in range(1, 9): #(1, 14+1)
             try:
